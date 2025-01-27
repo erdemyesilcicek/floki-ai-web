@@ -1,0 +1,100 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .main {
+    background: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: var(--text-gray);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .description {
+    font-size: 1.125rem; /* Paragraf boyutu */
+    color: var(--text-gray); /* Paragraf rengi */
+    text-align: justify; /* Yazıyı iki yana yasla */
+    line-height: 1.6; /* Satır arası boşluk */
+    margin-bottom: 1rem;
+  }
+  
+  .listText {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--muted-green);
+    margin-bottom: 1rem;
+  }
+  
+  .list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: var(--light);
+  }
+  
+  .list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .link {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: var(--muted-green);
+  }
+  
+  .contact {
+    font-size: 1rem;
+    color: var(--text-gray);
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+    
+    .list {
+      font-size: 1rem;
+    }
+  
+    .heading {
+      font-size: 1.25rem;
+    }
+  }
+  

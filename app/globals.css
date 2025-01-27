@@ -1,0 +1,47 @@
+:root {
+  --background: #FF6887;
+  --foreground: #171717;
+  --primary-green: #FF6887; /* Ana yeşil renk */
+  --dark: #ffffff; /* Siyah ton */
+  --light: #ffffff; /* Beyaz */
+  --text-gray: #696899; /* Açık gri (yazılar için) */
+  --muted-green: #FF6887; /* Daha yumuşak yeşil */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #FF6887;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
