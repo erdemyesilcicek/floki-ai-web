@@ -17,6 +17,9 @@ export default function Home() {
           <a href="/term-of-use" className={styles.button}>
             Terms of Use
           </a>
+          <a href="/delete-account" className={styles.button}>
+            Delete Account Request
+          </a>
         </div>
       </main>
     </div>
