@@ -1,0 +1,379 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/FairyTaleHero.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.FairyTaleHero_heroContainer__w9Ay_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.FairyTaleHero_stars__EE0iu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.FairyTaleHero_star__uMS0z {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  animation: FairyTaleHero_twinkleAnimation__6a6og 3s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_twinkleAnimation__6a6og {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+.FairyTaleHero_magicWand___3VBE {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(-30deg);
+  animation: FairyTaleHero_wandFloatAnimation__bAAid 5s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_wandFloatAnimation__bAAid {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(-20deg) translateY(-10px); }
+}
+
+.FairyTaleHero_wandStar__vAE3B {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: FairyTaleHero_glowAnimation__PJTYo 2s infinite ease-in-out;
+}
+
+.FairyTaleHero_wandStar__vAE3B::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: FairyTaleHero_pulseAnimation__Kr7O9 2s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_pulseAnimation__Kr7O9 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.2; }
+}
+
+.FairyTaleHero_wandStick__ol5lq {
+  width: 5px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--fairy-gold), var(--primary-pink));
+  margin-top: 2px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.FairyTaleHero_magicBook__89eJE {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 80px;
+  height: 60px;
+  perspective: 600px;
+  animation: FairyTaleHero_bookFloatAnimation__7XHyL 6s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_bookFloatAnimation__7XHyL {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.FairyTaleHero_bookCover__KvQxE {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-pink), var(--fairy-purple));
+  border-radius: 5px;
+  transform: rotateY(15deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: FairyTaleHero_bookAnimation__MNmkK 8s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_bookAnimation__MNmkK {
+  0%, 100% { transform: rotateY(15deg); }
+  50% { transform: rotateY(30deg); }
+}
+
+.FairyTaleHero_bookPages__yuJZY {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: white;
+  border-radius: 3px;
+  transform: rotateY(15deg) translateZ(-2px);
+}
+
+.FairyTaleHero_bookSparkle__rCXWd {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: FairyTaleHero_twinkleAnimation__6a6og 2s infinite ease-in-out;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .FairyTaleHero_magicWand___3VBE {
+    top: 5%;
+    right: 5%;
+    transform: scale(0.8) rotate(-30deg);
+  }
+  
+  .FairyTaleHero_magicBook__89eJE {
+    bottom: 10%;
+    left: 5%;
+    transform: scale(0.8);
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/delete-account/delete-account.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.delete-account_container__pjjUd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--foreground);
+    color: var(--text-gray);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .delete-account_container__pjjUd::before,
+  .delete-account_container__pjjUd::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23ffffff' d='M50 0 L55 35 L90 40 L55 45 L50 80 L45 45 L10 40 L45 35 Z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+    animation: delete-account_floatAnimation__wLupj 8s ease-in-out infinite;
+  }
+  
+  .delete-account_container__pjjUd::before {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+  }
+  
+  .delete-account_container__pjjUd::after {
+    bottom: 10%;
+    right: 5%;
+    animation-delay: 2s;
+    transform: rotate(45deg);
+  }
+    .delete-account_main__HYI1l {
+    text-align: center;
+    max-width: 800px;
+    padding: 3.5rem;
+    border-radius: var(--border-radius);
+    background: var(--dark);
+    box-shadow: 
+      0 10px 30px var(--fairy-shadow),
+      0 0 60px rgba(255, 215, 0, 0.1),
+      0 0 20px rgba(156, 106, 222, 0.1);
+    position: relative;
+    z-index: 1;
+    animation: delete-account_appear__sqdXz 0.5s ease-out;
+    border: 2px solid rgba(255, 104, 135, 0.1);
+    overflow: hidden;
+  }
+  
+  .delete-account_main__HYI1l::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--fairy-gold), var(--primary-pink), var(--fairy-purple));
+    opacity: 0.6;
+  }
+  
+  @keyframes delete-account_appear__sqdXz {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .delete-account_title__RxWNF {
+    font-family: var(--font-marcellus), serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-pink);
+    margin-bottom: 1.5rem;
+    text-shadow: 
+      0 2px 10px var(--fairy-shadow),
+      0 0 5px rgba(255, 215, 0, 0.3);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .delete-account_title__RxWNF::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-pink), transparent);
+  }
+    .delete-account_description__BFcbD {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    position: relative;
+    font-family: var(--font-nunito), sans-serif;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+    padding: 0 15px;
+  }
+  
+  .delete-account_description__BFcbD::first-letter {
+    font-size: 1.8em;
+    font-family: var(--font-marcellus), serif;
+    color: var(--fairy-purple);
+    float: left;
+    margin-right: 1px;
+    line-height: 1;
+  }
+  
+  .delete-account_buttons__bVuXf {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .delete-account_buttons__bVuXf::before, 
+  .delete-account_buttons__bVuXf::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%239C6ADE' opacity='0.5' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+  
+  .delete-account_buttons__bVuXf::before {
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .delete-account_buttons__bVuXf::after {
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+    .delete-account_button__hXYoz {
+    padding: 0.85rem 1.7rem;
+    background-color: var(--primary-pink);
+    color: var(--light);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+      0 4px 15px var(--fairy-shadow),
+      0 0 5px rgba(255, 215, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .delete-account_button__hXYoz::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+  
+  .delete-account_button__hXYoz::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    background: radial-gradient(ellipse at center, var(--fairy-shadow) 0%, transparent 70%);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-account_button__hXYoz:hover {
+    background-color: var(--muted-pink);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 
+      0 7px 20px var(--fairy-shadow),
+      0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  
+  .delete-account_button__hXYoz:hover::before {
+    left: 100%;
+  }
+  
+  .delete-account_button__hXYoz:hover::after {
+    opacity: 0.8;
+    bottom: -5px;
+  }
+    @media (max-width: 768px) {
+    .delete-account_main__HYI1l {
+      padding: 2rem;
+      margin: 1rem;
+      width: 90%;
+    }
+    
+    .delete-account_title__RxWNF {
+      font-size: 1.8rem;
+    }
+  
+    .delete-account_description__BFcbD {
+      font-size: 1rem;
+      padding: 0 5px;
+    }
+  
+    .delete-account_button__hXYoz {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.4rem;
+    }
+  }
+  

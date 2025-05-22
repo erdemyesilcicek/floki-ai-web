@@ -1,0 +1,149 @@
+.heroContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  animation: twinkleAnimation 3s infinite ease-in-out;
+}
+
+@keyframes twinkleAnimation {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+.magicWand {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(-30deg);
+  animation: wandFloatAnimation 5s infinite ease-in-out;
+}
+
+@keyframes wandFloatAnimation {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(-20deg) translateY(-10px); }
+}
+
+.wandStar {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: glowAnimation 2s infinite ease-in-out;
+}
+
+.wandStar::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: pulseAnimation 2s infinite ease-in-out;
+}
+
+@keyframes pulseAnimation {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.2; }
+}
+
+.wandStick {
+  width: 5px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--fairy-gold), var(--primary-pink));
+  margin-top: 2px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.magicBook {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 80px;
+  height: 60px;
+  perspective: 600px;
+  animation: bookFloatAnimation 6s infinite ease-in-out;
+}
+
+@keyframes bookFloatAnimation {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.bookCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-pink), var(--fairy-purple));
+  border-radius: 5px;
+  transform: rotateY(15deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: bookAnimation 8s infinite ease-in-out;
+}
+
+@keyframes bookAnimation {
+  0%, 100% { transform: rotateY(15deg); }
+  50% { transform: rotateY(30deg); }
+}
+
+.bookPages {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: white;
+  border-radius: 3px;
+  transform: rotateY(15deg) translateZ(-2px);
+}
+
+.bookSparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: twinkleAnimation 2s infinite ease-in-out;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .magicWand {
+    top: 5%;
+    right: 5%;
+    transform: scale(0.8) rotate(-30deg);
+  }
+  
+  .magicBook {
+    bottom: 10%;
+    left: 5%;
+    transform: scale(0.8);
+  }
+}

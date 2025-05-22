@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito:wght@300;400;600;700&display=swap');
+
+:root {
+  --background: #FF6887;
+  --foreground: #FF6887;
+  --primary-pink: #FF6887; /* Ana pembe renk */
+  --dark: #ffffff; /* Beyaz zemin */
+  --light: #ffffff; /* Beyaz */
+  --text-gray: #696899; /* Açık gri (yazılar için) */
+  --muted-pink: #FF8CA2; /* Daha yumuşak pembe */
+  --fairy-gold: #FFD700; /* Peri masalı altın rengi */
+  --fairy-purple: #9C6ADE; /* Peri masalı mor */
+  --fairy-blue: #78A9FF; /* Peri masalı mavi */
+  --fairy-shadow: rgba(255, 104, 135, 0.2); /* Gölge efekti için */
+  --border-radius: 12px;
+  --animation-duration: 0.5s;
+  --font-marcellus: 'Marcellus', serif;
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #FF6887;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--foreground);
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23FFFFFF' opacity='0.2' d='M25 0 L28 17 L45 20 L28 23 L25 40 L22 23 L5 20 L22 17 Z'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3) 1%, transparent 5%),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.3) 1%, transparent 5%);
+  background-size: 100px 100px, 120px 120px, 150px 150px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Fairy tale animations and elements */
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes glowAnimation {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+  50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)); }
+}
+
+@keyframes twinkleAnimation {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-pink);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-pink);
+}

@@ -1,0 +1,119 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/loading.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.loading_loadingContainer__qvVRA {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading_loadingWrapper__FSOP_ {
+  text-align: center;
+}
+
+.loading_magicWand__6UIOy {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  transform: rotate(-30deg);
+  animation: loading_castSpell____GOD 3s infinite ease-in-out;
+}
+
+@keyframes loading_castSpell____GOD {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+.loading_wandStar__Srdc_ {
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: loading_sparkleWand__ARVdf 2s infinite ease-in-out;
+}
+
+@keyframes loading_sparkleWand__ARVdf {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.loading_wandStar__Srdc_::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: loading_glowWand__qkeCs 2s infinite ease-in-out;
+}
+
+@keyframes loading_glowWand__qkeCs {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.2; }
+}
+
+.loading_wandStick__cISUl {
+  width: 8px;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--fairy-gold), var(--primary-pink));
+  margin-top: 2px;
+  margin-left: 11px;
+  border-radius: 5px;
+}
+
+.loading_loadingText__nqTt_ {
+  font-family: var(--font-marcellus), serif;
+  font-size: 1.5rem;
+  color: var(--light);
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 2px 10px var(--fairy-shadow);
+  animation: loading_pulseText__Y7Ky6 2s infinite ease-in-out;
+}
+
+@keyframes loading_pulseText__Y7Ky6 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.loading_loadingText__nqTt_::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--light), transparent);
+}
+
+/* Magical dust particles */
+.loading_loadingContainer__qvVRA::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3) 1%, transparent 5%),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.3) 1%, transparent 5%);
+  background-size: 100px 100px, 120px 120px;
+  animation: loading_floatBackground__XPW1Q 10s infinite linear;
+}
+
+@keyframes loading_floatBackground__XPW1Q {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 100px 100px, 120px 120px; }
+}
+

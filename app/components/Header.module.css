@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 104, 135, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 
+    0 4px 20px var(--fairy-shadow),
+    0 0 5px rgba(255, 215, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-family: var(--font-marcellus), serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-pink);
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 1px 2px var(--fairy-shadow),
+    0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+.logoText::after {
+  content: '✨';
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  font-size: 1rem;
+  opacity: 0.8;
+  animation: sparkle 2s infinite ease-in-out;
+}
+
+.logoText::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-pink), transparent);
+  opacity: 0.7;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+  50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.navLink::before {
+  content: '•';
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: var(--fairy-gold);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--fairy-purple), var(--primary-pink));
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-pink);
+  transform: translateX(5px);
+}
+
+.navLink:hover::before {
+  opacity: 1;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+}

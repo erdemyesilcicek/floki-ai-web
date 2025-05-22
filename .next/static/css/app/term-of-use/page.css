@@ -1,0 +1,354 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/FairyTaleHero.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.FairyTaleHero_heroContainer__w9Ay_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.FairyTaleHero_stars__EE0iu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.FairyTaleHero_star__uMS0z {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  animation: FairyTaleHero_twinkleAnimation__6a6og 3s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_twinkleAnimation__6a6og {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+.FairyTaleHero_magicWand___3VBE {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(-30deg);
+  animation: FairyTaleHero_wandFloatAnimation__bAAid 5s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_wandFloatAnimation__bAAid {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(-20deg) translateY(-10px); }
+}
+
+.FairyTaleHero_wandStar__vAE3B {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: FairyTaleHero_glowAnimation__PJTYo 2s infinite ease-in-out;
+}
+
+.FairyTaleHero_wandStar__vAE3B::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: FairyTaleHero_pulseAnimation__Kr7O9 2s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_pulseAnimation__Kr7O9 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.2; }
+}
+
+.FairyTaleHero_wandStick__ol5lq {
+  width: 5px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--fairy-gold), var(--primary-pink));
+  margin-top: 2px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.FairyTaleHero_magicBook__89eJE {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 80px;
+  height: 60px;
+  perspective: 600px;
+  animation: FairyTaleHero_bookFloatAnimation__7XHyL 6s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_bookFloatAnimation__7XHyL {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.FairyTaleHero_bookCover__KvQxE {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-pink), var(--fairy-purple));
+  border-radius: 5px;
+  transform: rotateY(15deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: FairyTaleHero_bookAnimation__MNmkK 8s infinite ease-in-out;
+}
+
+@keyframes FairyTaleHero_bookAnimation__MNmkK {
+  0%, 100% { transform: rotateY(15deg); }
+  50% { transform: rotateY(30deg); }
+}
+
+.FairyTaleHero_bookPages__yuJZY {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: white;
+  border-radius: 3px;
+  transform: rotateY(15deg) translateZ(-2px);
+}
+
+.FairyTaleHero_bookSparkle__rCXWd {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M12 0L14 8 22 10 14 12 12 20 10 12 2 10 10 8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: FairyTaleHero_twinkleAnimation__6a6og 2s infinite ease-in-out;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .FairyTaleHero_magicWand___3VBE {
+    top: 5%;
+    right: 5%;
+    transform: scale(0.8) rotate(-30deg);
+  }
+  
+  .FairyTaleHero_magicBook__89eJE {
+    bottom: 10%;
+    left: 5%;
+    transform: scale(0.8);
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/term-of-use/term-of-use.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+
+.term-of-use_container__HIa1E {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .term-of-use_main__8fr_w {
+    background: var(--dark);
+    border-radius: var(--border-radius);
+    box-shadow: 
+      0 10px 30px var(--fairy-shadow),
+      0 0 60px rgba(255, 215, 0, 0.1);
+    padding: 3rem;
+    color: var(--text-gray);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(255, 104, 135, 0.1);
+  }
+  
+  .term-of-use_main__8fr_w::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--fairy-gold), var(--primary-pink), var(--fairy-purple));
+    opacity: 0.6;
+  }
+  
+  .term-of-use_title__DbRVb {
+    font-family: var(--font-marcellus), serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-pink);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    text-shadow: 
+      0 2px 10px var(--fairy-shadow),
+      0 0 5px rgba(255, 215, 0, 0.3);
+    letter-spacing: 1px;
+  }
+  
+    .term-of-use_description__UcXkC {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-family: var(--font-nunito), sans-serif;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  }
+  
+  .term-of-use_section__PIZ1H:first-of-type .term-of-use_description__UcXkC::first-letter {
+    font-size: 1.8em;
+    font-family: var(--font-marcellus), serif;
+    color: var(--fairy-purple);
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+  }
+  
+  .term-of-use_listText__Py6Xy {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  
+  .term-of-use_section__PIZ1H {
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  
+  .term-of-use_section__PIZ1H::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--fairy-purple), transparent);
+    opacity: 0.5;
+  }
+  
+  .term-of-use_heading__RnjpY {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary-pink);
+    margin-bottom: 1.2rem;
+    font-family: var(--font-marcellus), serif;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .term-of-use_heading__RnjpY::before {
+    content: '✦';
+    position: absolute;
+    left: -25px;
+    color: var(--fairy-gold);
+    opacity: 0.7;
+    font-size: 0.8em;
+  }
+    .term-of-use_list__7GriX {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-gray);
+  }
+  
+  .term-of-use_list__7GriX li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+  }
+  
+  .term-of-use_list__7GriX li::before {
+    content: '✧';
+    position: absolute;
+    left: 0;
+    color: var(--fairy-gold);
+    opacity: 0.8;
+  }
+  
+  .term-of-use_link__Fcq_2 {
+    color: var(--primary-pink);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .term-of-use_link__Fcq_2:hover {
+    text-decoration: none;
+    color: var(--fairy-purple);
+  }
+    .term-of-use_contact__P7UIc {
+    font-size: 1rem;
+    color: var(--text-gray);
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    border-top: 1px dashed rgba(255, 104, 135, 0.2);
+  }
+  
+  .term-of-use_contact__P7UIc::before,
+  .term-of-use_contact__P7UIc::after {
+    content: '✦';
+    position: absolute;
+    top: -5px;
+    color: var(--fairy-gold);
+    opacity: 0.7;
+    font-size: 0.8em;
+  }
+  
+  .term-of-use_contact__P7UIc::before {
+    left: 30%;
+  }
+  
+  .term-of-use_contact__P7UIc::after {
+    right: 30%;
+  }
+  
+  @media (max-width: 768px) {
+    .term-of-use_main__8fr_w {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    .term-of-use_title__DbRVb {
+      font-size: 2rem;
+    }
+  
+    .term-of-use_description__UcXkC {
+      font-size: 1rem;
+    }
+    
+    .term-of-use_list__7GriX {
+      font-size: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .term-of-use_heading__RnjpY {
+      font-size: 1.3rem;
+    }
+    
+    .term-of-use_heading__RnjpY::before {
+      left: -20px;
+      font-size: 0.7em;
+    }
+  }
+  

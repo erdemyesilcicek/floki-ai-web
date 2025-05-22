@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/term-of-use/page": "app/term-of-use/page.js",
+  "/delete-account/page": "app/delete-account/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js"
+}
